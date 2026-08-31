@@ -13,13 +13,14 @@ Office.onReady(() => {
 });
 
 function openAddressBook(event) {
-console.log("openAddressBook called");
-
-    Office.context.ui.openBrowserWindow(
-        "https://daiopaper.sharepoint.com/sites/PhishingSimulation"
-    );
+    console.log("openAddressBook called");
+    alert("成功");
     event.completed();
 }
+Office.actions.associate(
+    "openAddressBook",
+    openAddressBook
+);
 </script>
 
 </head>
