@@ -13,7 +13,11 @@ Office.onReady(() => {
 });
 function openAddressBook(event) {
     console.log("openAddressBook called");
-    alert("成功");
+    Office.context.ui.displayDialogAsync(
+        "https://daiopaper.sharepoint.com/sites/PhishingSimulation",
+        { height: 60, width: 60 }
+    );
+
     event.completed();
 }
 Office.actions.associate(
