@@ -13,11 +13,10 @@ Office.onReady(() => {
 });
 function openAddressBook(event) {
     console.log("openAddressBook called");
-    Office.context.ui.displayDialogAsync(
-        "https://daiopaper.sharepoint.com/sites/PhishingSimulation",
-        { height: 60, width: 60 }
+    window.open(
+    "https://daiopaper.sharepoint.com/sites/PhishingSimulation",
+    "_blank"
     );
-
     event.completed();
 }
 Office.actions.associate(
